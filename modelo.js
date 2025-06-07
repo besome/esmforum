@@ -34,6 +34,7 @@ function get_pergunta(id_pergunta) {
   return bd.query('select * from perguntas where id_pergunta = ?', [id_pergunta]);
 }
 
+
 function get_respostas(id_pergunta) {
   return bd.queryAll('select * from respostas where id_pergunta = ?', [id_pergunta]);
 }
